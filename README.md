@@ -39,3 +39,9 @@ source env/bin/activate
 python run.py 
 ```
 That serves up anyqr on your local node IP address.
+
+Access it through http://127.0.0.1:4203/ on localhost or through your nodes IP address, like so:
+
+http://192.168.0.111:4203/
+
+You can now paste strings into the text box and generate all sorts of QR codes on our node.
