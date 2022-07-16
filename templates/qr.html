@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1 class="pt-2">Generate a QR code</h1>
+    <section class='pt-4 pb-4' style='border-style:  solid; border-width: 1px; border-radius: 15px; border-color: rgb(50,50,196); background-color: rgb(10,10,45)'>
+      <form class="m-2" method="POST">
+        <input name="text" placeholder="Paste QR Code">
+        <input type="submit" class='btn btn-info btn-sm' value="Submit">
+      </form>
+    </section>
+
+    {% if qrstring %}
+
+    <section class="mt-4 bg-light text-dark" style="padding:10px; border-radius: 15px;">
+        <p class="text-dark">{{qrstring}}</p>
+        <img src="{{qrcode(qrstring) }}" style="max-width:350px"></center>
+    </section>
+    {% endif %}
+
+{% endblock content %}
+
+
