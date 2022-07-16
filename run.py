@@ -5,14 +5,13 @@ from flask_qrcode import QRcode
 app = Flask(__name__)
 QRcode(app)
 
-
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['GET', 'POST'])
 def connect():
-    #qrstring = "string"
-    if request.form['text'] is not None:
+    try:
         qrstring = request.form['text']
+    except:
+        qrstring = ""
     return render_template('qr.html', qrstring=qrstring)
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4203, debug=True)
