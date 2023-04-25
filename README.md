@@ -1,10 +1,11 @@
 # Display QR Codes
 Sometimes you need to generate a QR code on your node, for whatever reason. This simple tool create any QR code you want on your node and displays it on your local network. It can be exposed via tor too if need be for remote access.
 
-## Installation
-First, clone repository to your node. Run this in your terminal:
+## Installation 
+Installation instructions for Ubuntu based nodes. Clone repository to your node. Run this in your terminal:
 
 ```sh
+cd
 git clone https://github.com/proofofjogi/anyqr.git
 ```
 
