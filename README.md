@@ -1,5 +1,5 @@
 # Display QR Codes
-A simple tool to create any QR code offline on your node own node.
+Sometimes you need to generate a QR code on your node, for whatever reason. This simple tool create any QR code you want on your node and displays it on your local network. It can be exposed via tor too if need be for remote access.
 
 ## Installation
 First, clone repository to your node. Run this in your terminal:
